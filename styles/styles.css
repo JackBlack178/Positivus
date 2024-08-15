@@ -784,6 +784,12 @@ h4 {
 .services__list:not(:last-child) {
   margin-bottom: 100px;
 }
+@media (max-width: 1280px) {
+  .services__list:not(:last-child) {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 767px) {
   .services__list:not(:last-child) {
     margin-bottom: 70px;
@@ -792,6 +798,7 @@ h4 {
 @media (max-width: 1280px) {
   .services__item {
     margin-inline: auto;
+    width: 100%;
   }
 }
 
@@ -1075,6 +1082,12 @@ h4 {
   align-self: end;
   min-width: 269px;
 }
+@media (max-width: 480px) {
+  .team__button {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 .team-card {
   padding-inline: 35px;
@@ -1089,17 +1102,31 @@ h4 {
     padding: 30px 20px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .team-card {
-    max-width: 390px;
+    width: 100%;
     margin: 0 auto;
   }
 }
 .team-card__header {
   display: flex;
+  justify-content: space-between;
+}
+.team-card__name {
+  font-size: clamp(18px, 1.3888888889vw, 20px);
 }
 .team-card__link {
   align-self: start;
+  flex-shrink: 0;
+  width: 34px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--color-accent);
+  background-color: var(--color-dark);
+  border-radius: 50%;
 }
 @media (hover: hover) {
   .team-card__link:hover {
@@ -1114,6 +1141,9 @@ h4 {
 .team-card__info {
   align-self: end;
   margin-inline: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
 }
 .team-card__body {
   --cardBodyOffset: 28px;
