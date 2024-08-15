@@ -4,6 +4,11 @@
     &:not(:last-child){
       margin-bottom: 100px;
 
+      @include desktop {
+        width: max-content;
+        margin: 0 auto;
+      }
+
       @include mobile {
         margin-bottom: 70px;
       }
@@ -13,6 +18,7 @@
   &__item {
     @include desktop {
       margin-inline: auto;
+      width: 100%;
     }
   }
 }
