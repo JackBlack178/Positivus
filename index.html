@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="radio.js"></script>
     <title>Positivus</title>
 </head>
 <body>
@@ -707,6 +708,60 @@
                             </svg>
                         </button>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container section--hidden-x">
+            <header class="section__header">
+                <h2 class="section__title puddle-bg">Contact Us </h2>
+                <div class="section__description">
+                    <p>
+                        Connect with Us: Let's Discuss Your Digital Marketing Needs                    </p>
+                </div>
+            </header>
+            <div class="section__body">
+                <div class="contact-us">
+                    <form class="contact-us__form">
+                        <fieldset class="contact-us__request-types radios" >
+                            <legend class="radios__title visually-hidden">Request type</legend>
+                            <label class="radios__item radio">
+                                <input
+                                        class="radio__input visually-hidden"
+                                        type="radio"
+                                        value="Say Hi"
+                                        name="request"
+                                        >
+                                <span class="radio__emulator"></span>
+                                <span class="radio__label">Say hi</span>
+                            </label>
+                            <label class="radios__item radio">
+                                <input
+                                        class="radio__input visually-hidden"
+                                        type="radio"
+                                        value="Get a quote"
+                                        name="request">
+                                <span class="radio__emulator"></span>
+                                <span class="radio__label">Get a Quote</span>
+                            </label>
+                        </fieldset>
+                        <div class="contact-us__body">
+                            <div class="contact-us__field field">
+                                <label class="field__label" for="name">Name</label>
+                                <input type="text" id="name" class="field__input" placeholder="Name">
+                            </div>
+                            <div class="contact-us__field field">
+                                <label class="field__label" for="email">Email*</label>
+                                <input type="email" id="email" class="field__input" placeholder="Email" required>
+                            </div>
+                            <div class="contact-us__field field">
+                                <label class="field__label" for="message">Message*</label>
+                                <textarea name="message" id="message" class="field__input field__input--textarea" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="contact-us__button button">
+                            Send Message
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
