@@ -1,0 +1,50 @@
+.team-card {
+  padding-inline: 35px;
+  padding-block:40px 60px;
+  height: 100%;
+  border-radius: var(--border-radius-large);
+  border:1px solid var(--color-dark);
+  box-shadow: var(--shadow);
+
+
+
+  @include tablet {
+    padding: 30px 20px;
+  }
+
+  @include mobile {
+    max-width: 390px;
+    margin:0 auto;
+  }
+
+  &__header {
+    display: flex;
+  }
+
+  &__link {
+    align-self: start;
+
+    @include hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__info {
+    align-self: end;
+    margin-inline: 20px 10px;
+
+  }
+
+  &__body {
+    --cardBodyOffset: 28px;
+
+    margin-top:var(--cardBodyOffset);
+    padding-top:var(--cardBodyOffset);
+    border-top:1px solid var(--color-dark);
+
+    @include tablet {
+      --cardBodyOffset: 14px;
+    }
+
+  }
+}

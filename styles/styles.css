@@ -515,6 +515,16 @@ h4 {
     --gridColumns: 1;
   }
 }
+@media (max-width: 1280px) {
+  .grid--3 {
+    --gridColumns: 2;
+  }
+}
+@media (max-width: 767px) {
+  .grid--3 {
+    --gridColumns: 1;
+  }
+}
 @media (max-width: 1023px) {
   .grid {
     gap: 30px;
@@ -1054,6 +1064,67 @@ h4 {
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid var(--color-dark);
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.team__button {
+  align-self: end;
+  min-width: 269px;
+}
+
+.team-card {
+  padding-inline: 35px;
+  padding-block: 40px 60px;
+  height: 100%;
+  border-radius: var(--border-radius-large);
+  border: 1px solid var(--color-dark);
+  box-shadow: var(--shadow);
+}
+@media (max-width: 1023px) {
+  .team-card {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .team-card {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+}
+.team-card__header {
+  display: flex;
+}
+.team-card__link {
+  align-self: start;
+}
+@media (hover: hover) {
+  .team-card__link:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .team-card__link:active {
+    opacity: 0.7;
+  }
+}
+.team-card__info {
+  align-self: end;
+  margin-inline: 20px 10px;
+}
+.team-card__body {
+  --cardBodyOffset: 28px;
+  margin-top: var(--cardBodyOffset);
+  padding-top: var(--cardBodyOffset);
+  border-top: 1px solid var(--color-dark);
+}
+@media (max-width: 1023px) {
+  .team-card__body {
+    --cardBodyOffset: 14px;
+  }
 }
 
 .section {
