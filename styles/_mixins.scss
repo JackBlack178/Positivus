@@ -41,6 +41,11 @@
    aspect-ratio: 1;
  }
 
+ @mixin square-px($size) {
+   width: #{$size};
+   aspect-ratio: 1;
+ }
+
  @mixin visually-hidden {
    position: absolute;
    width: 1px;
