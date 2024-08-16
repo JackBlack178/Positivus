@@ -2,6 +2,7 @@
 
 ## File structure
 ![image](https://github.com/user-attachments/assets/edb50a6e-111b-4f67-b27e-33f97f7e3cf2)
+##
 Styles has directory blocks which has sass files which describes bem block
 Styles files also has normalize.scss, mixins.scss and others.
 
