@@ -16,4 +16,14 @@
     background-color: transparent;
     color:var(--color-dark);
   }
+
+  &--accent {
+    background-color: var(--color-accent);
+    color:var(--color-dark);
+
+    @include hover {
+      background-color: var(--color-dark);
+      color:var(--color-accent);
+    }
+  }
 }
